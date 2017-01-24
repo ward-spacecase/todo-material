@@ -11,7 +11,11 @@
     function DefaultHomeController() {
         var vm = this;
 
-        vm.name = 'Guest';
+        vm.name = '';
+
+        vm.login = function() {
+
+        }
 
     }
 

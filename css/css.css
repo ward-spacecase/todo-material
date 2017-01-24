@@ -1,5 +1,5 @@
 
-.login-page {
+body {
 
     background: #3ca2e0;
     text-align: center;
@@ -12,4 +12,35 @@
     margin: 0 auto;
     width: 125px;
     height: 125px
+}
+
+.navbar-avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.background-color {
+    background-color: #3ca2e0;
+}
+
+#whitef {
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+h1 .yuge {
+    font-size: 80px;
+}
+#whitef h1 {
+    margin-top: -20px;
+
+}
+#license-footer {
+    background-color: #2089c9;
+    width: 100%;
+    color:white;
+    align-self: flex-end;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: small;
+    border-top: 1px solid #104463;
 }
