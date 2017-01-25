@@ -24,22 +24,70 @@
 
             <div layout="row" layout-align="center center" class="background-color" layout-fill>
                 <md-whiteframe class="md-whiteframe-z1" id="whitef" layout="column" flex="60" layout-padding>
+                    <div layout="row" layout-align="center center">
                     <img src="img/icon.jpg" class="avatar">
-                    <h1><span class="yuge">J</span>ust Do It</h1>
-                    <md-content md-theme="docs-dark">
+                    <h1 id="brand-lettering"><span class="yuge">J</span>ust Do It</h1>
+                    </div>
 
-                        <md-input-container>
-                            <label>Name</label>
-                            <input name="nickname" md-maxlength="8" required ng-model="vm.name">
-                        </md-input-container>
+
+                    <!--LOGIN-->
+                    <md-content md-theme="docs-dark" ng-hide="vm.loginBool">
+
+                        <h1 class="login-register-header">Login</h1>
+                        <div layout="row" layout-align="center center">
+                            <md-input-container flex="70" flex-sm="100">
+                                <label>Email</label>
+                                <input name="email" type="email" required ng-model="vm.email">
+                            </md-input-container>
+                        </div>
+                        <div layout="row" layout-align="center center">
+                            <md-input-container flex="70" flex-sm="100">
+                                <label>Password</label>
+                                <input name="password" type="password" required>
+                            </md-input-container>
+                        </div>
                         <!--https://material.angularjs.org/latest/api/directive/mdInput-->
 
                         <md-input-container layout-align="center center">
                             <div layout="row" layout-sm="column" layout-margin>
-                                <md-button class="md-raised md-primary" flex="50" flex-sm="100" ng-click="vm.login()">Login</md-button>
+                                <md-button class="md-raised md-accent" flex="50" flex-sm="100" ng-click="vm.login()">Login</md-button>
+                                <md-button ng-click="vm.loginBool = !vm.loginBool" class="md-raised" flex="50" flex-sm="100">Register</md-button>
                             </div>
                         </md-input-container>
                     </md-content>
+
+
+                    <!--REGISTER-->
+                    <md-content md-theme="docs-dark" ng-show="vm.loginBool">
+                        <h1 class="login-register-header">Register</h1>
+                        <div layout="row" layout-align="center center">
+                            <md-input-container flex="70" flex-sm="100">
+                                <label>Email</label>
+                                <input name="email" type="email" required ng-model="vm.email">
+                            </md-input-container>
+                        </div>
+                        <div layout="row" layout-align="center center">
+                            <md-input-container flex="70" flex-sm="100">
+                                <label>Password</label>
+                                <input name="password" type="password" required>
+                            </md-input-container>
+                        </div>
+                        <div layout="row" layout-align="center center">
+                            <md-input-container flex="70" flex-sm="100">
+                                <label>Confirm Password</label>
+                                <input name="confirm-password" type="password" required>
+                            </md-input-container>
+                        </div>
+                        <!--https://material.angularjs.org/latest/api/directive/mdInput-->
+
+                        <md-input-container layout-align="center center">
+                            <div layout="row" layout-sm="column" layout-margin>
+                                <md-button ng-click="vm.loginBool = !vm.loginBool" class="md-raised" flex="50" flex-sm="100" ng-click="vm.login()">Login</md-button>
+                                <md-button class="md-raised md-accent" flex="50" flex-sm="100">Register</md-button>
+                            </div>
+                        </md-input-container>
+                    </md-content>
+
                 </md-whiteframe>
             </div>
 

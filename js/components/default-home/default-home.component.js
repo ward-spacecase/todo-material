@@ -11,6 +11,7 @@
     function DefaultHomeController() {
         var vm = this;
 
+        vm.loginBool = true;
         vm.name = '';
 
         vm.login = function() {

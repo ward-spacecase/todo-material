@@ -21,7 +21,18 @@
     <script src="js/app.module.js"></script>
     <script src="js/other/ui.routes.js"></script>
     <script src="js/components/default-home/default-home.component.js"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCj-WuOcQWqcvyKCTJIn4EPUMGjBXEGpHk",
+            authDomain: "todo-app-837f6.firebaseapp.com",
+            databaseURL: "https://todo-app-837f6.firebaseio.com",
+            storageBucket: "todo-app-837f6.appspot.com",
+            messagingSenderId: "805434516028"
+        };
+        firebase.initializeApp(config);
+    </script>
 </head>
 <body ng-app="myApp">
 
