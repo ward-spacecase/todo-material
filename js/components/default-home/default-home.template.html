@@ -31,7 +31,7 @@
 
 
                     <!--LOGIN-->
-                    <md-content md-theme="docs-dark" ng-hide="vm.loginBool">
+                    <md-content md-theme="docs-dark" ng-hide="vm.loginBool" >
 
                         <h1 class="login-register-header">Login</h1>
                         <div layout="row" layout-align="center center">
@@ -69,7 +69,7 @@
                         <div layout="row" layout-align="center center">
                             <md-input-container flex="70" flex-sm="100">
                                 <label>Password</label>
-                                <input name="password" type="password" required>
+                                <input name="password" type="password" required ng-model="vm.psd">
                             </md-input-container>
                         </div>
                         <div layout="row" layout-align="center center">
@@ -82,8 +82,8 @@
 
                         <md-input-container layout-align="center center">
                             <div layout="row" layout-sm="column" layout-margin>
-                                <md-button ng-click="vm.loginBool = !vm.loginBool" class="md-raised" flex="50" flex-sm="100" ng-click="vm.login()">Login</md-button>
-                                <md-button class="md-raised md-accent" flex="50" flex-sm="100">Register</md-button>
+                                <md-button ng-click="vm.loginBool = !vm.loginBool" class="md-raised" flex="50" flex-sm="100"">Login</md-button>
+                                <md-button class="md-raised md-accent" flex="50" flex-sm="100" ng-click="vm.register(vm.email, vm.psd)">Register</md-button>
                             </div>
                         </md-input-container>
                     </md-content>

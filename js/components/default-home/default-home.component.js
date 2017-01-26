@@ -14,8 +14,20 @@
         vm.loginBool = true;
         vm.name = '';
 
-        vm.login = function() {
+        vm.register = function(email, pw) {
 
+            var ref = new Firebase(config.databaseURL);
+          ref.createUser({
+                email: email,
+                password: pw
+          }, function(error, userData){
+              if(error) {
+                  console.log("Couldn't register..." + error);
+              } else {
+                  console.log("Successfully created user account with uid:", userData.uid);
+
+              }
+          });
         }
 
     }
