@@ -8,27 +8,55 @@
             controllerAs: 'vm'
         });
 
-    function DefaultHomeController() {
+    function DefaultHomeController(auth, $mdToast) {
         var vm = this;
 
-        vm.loginBool = true;
-        vm.name = '';
+        vm.loginBool = false;
+        vm.user = {};
 
-        vm.register = function(email, pw) {
+        vm.register = function() {
+            var user = auth.registerUser(vm.user).then(function (user) {
+                console.log(user);
+                $mdToast.show(
+                    $mdToast.simple()
+                        .textContent('Success! Now logged in ')
+                        .hideDelay(3000)
+                );
+            }).catch(function (error) {
+                vm.error = error;
+            });
+        };
 
-            var ref = new Firebase(config.databaseURL);
-          ref.createUser({
-                email: email,
-                password: pw
-          }, function(error, userData){
-              if(error) {
-                  console.log("Couldn't register..." + error);
-              } else {
-                  console.log("Successfully created user account with uid:", userData.uid);
+        vm.login = function() {
+            var user = auth.loginUser(vm.user).then(function(user){
+                $mdToast.show(
+                    $mdToast.simple()
+                        .textContent('Success! Now logged in ')
+                        .hideDelay(3000)
+                );
+            }) .catch(function (error) {
+                $mdToast.show(
+                    $mdToast.simple()
+                        .textContent('Error: ' + error.message)
+                        .hideDelay(3000)
+                );
+            })
+        };
 
-              }
-          });
+        vm.registerWithGoogle = function() {
+            auth.loginWithGoogle().then(function(result) {
+                $mdToast.show(
+                    $mdToast.simple()
+                        .textContent('Success! Now logged in')
+                        .hideDelay(3000)
+                );
+            }).catch(function(error) {
+                console.error("Authentication failed:", error);
+            });
         }
+
+    }
+    function loginError(error) {
 
     }
 

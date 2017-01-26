@@ -60,4 +60,8 @@ h1 .yuge {
     margin: 0;
     font-size: 50px;
 }
-
+#google-button {
+    padding: 0;
+    max-width: 191px;
+    max-height: 46px;
+}

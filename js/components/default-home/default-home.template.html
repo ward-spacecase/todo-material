@@ -37,14 +37,20 @@
                         <div layout="row" layout-align="center center">
                             <md-input-container flex="70" flex-sm="100">
                                 <label>Email</label>
-                                <input name="email" type="email" required ng-model="vm.email">
+                                <input name="email" type="email" required ng-model="vm.user.email">
+                                <div ng-messages="email.$error" ng-show="email.$dirty">
+                                    <div ng-message="required">This is required!</div>
+                                </div>
                             </md-input-container>
                         </div>
                         <div layout="row" layout-align="center center">
                             <md-input-container flex="70" flex-sm="100">
                                 <label>Password</label>
-                                <input name="password" type="password" required>
+                                <input name="password" type="password" ng-model="vm.user.password" required>
                             </md-input-container>
+                            <div ng-messages="password.$error" ng-show="email.$dirty">
+                                <div ng-message="required">This is required!</div>
+                            </div>
                         </div>
                         <!--https://material.angularjs.org/latest/api/directive/mdInput-->
 
@@ -52,6 +58,12 @@
                             <div layout="row" layout-sm="column" layout-margin>
                                 <md-button class="md-raised md-accent" flex="50" flex-sm="100" ng-click="vm.login()">Login</md-button>
                                 <md-button ng-click="vm.loginBool = !vm.loginBool" class="md-raised" flex="50" flex-sm="100">Register</md-button>
+                            </div>
+                        </md-input-container>
+                        <hr flex="40">
+                        <md-input-container layout-align="center center">
+                            <div layout="row" layout-align="center center">
+                                <md-button id="google-button" ng-click="vm.registerWithGoogle()"><img src="img/btn_google_signin_light_normal_web.png"></md-button>
                             </div>
                         </md-input-container>
                     </md-content>
@@ -63,32 +75,49 @@
                         <div layout="row" layout-align="center center">
                             <md-input-container flex="70" flex-sm="100">
                                 <label>Email</label>
-                                <input name="email" type="email" required ng-model="vm.email">
+                                <input name="email" type="email" required ng-model="vm.user.email">
+                                <div ng-messages="email.$error" ng-show="email.$dirty">
+                                    <div ng-message="required">This is required!</div>
+                                </div>
                             </md-input-container>
                         </div>
                         <div layout="row" layout-align="center center">
                             <md-input-container flex="70" flex-sm="100">
                                 <label>Password</label>
-                                <input name="password" type="password" required ng-model="vm.psd">
+                                <input name="password" type="password" required ng-model="vm.user.password">
+                                <div ng-messages="password.$error" ng-show="email.$dirty">
+                                    <div ng-message="required">This is required!</div>
+                                </div>
                             </md-input-container>
                         </div>
                         <div layout="row" layout-align="center center">
                             <md-input-container flex="70" flex-sm="100">
                                 <label>Confirm Password</label>
-                                <input name="confirm-password" type="password" required>
+                                <input name="confirmpassword" type="password" required>
+                                <div ng-messages="confirmpassword.$error" ng-show="email.$dirty">
+                                    <div ng-message="required">This is required!</div>
+                                    <div ng-message="">Must match first password!</div>
+                                </div>
                             </md-input-container>
                         </div>
-                        <!--https://material.angularjs.org/latest/api/directive/mdInput-->
 
                         <md-input-container layout-align="center center">
                             <div layout="row" layout-sm="column" layout-margin>
                                 <md-button ng-click="vm.loginBool = !vm.loginBool" class="md-raised" flex="50" flex-sm="100"">Login</md-button>
-                                <md-button class="md-raised md-accent" flex="50" flex-sm="100" ng-click="vm.register(vm.email, vm.psd)">Register</md-button>
+                                <md-button class="md-raised md-accent" flex="50" flex-sm="100" ng-click="vm.register()">Register</md-button>
                             </div>
                         </md-input-container>
+                        <hr flex="40">
+                        <md-input-container layout-align="center center">
+                            <div layout="row" layout-align="center center">
+                                <md-button id="google-button" ng-click="vm.registerWithGoogle()"><img src="img/btn_google_signin_light_normal_web.png"></md-button>
+                            </div>
+                        </md-input-container>
+
                     </md-content>
 
                 </md-whiteframe>
+
             </div>
 
         </md-content>
