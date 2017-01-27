@@ -65,3 +65,8 @@ h1 .yuge {
     max-width: 191px;
     max-height: 46px;
 }
+#loginErrors{
+    background-color: rgba(255,0,0, .2);
+    color: rgba(255,0,0, .9);
+
+}

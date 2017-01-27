@@ -11,11 +11,17 @@
     function DefaultHomeController(auth, $mdToast) {
         var vm = this;
 
+        vm.waiting = false;
         vm.loginBool = false;
         vm.user = {};
+        vm.loginError = function (error) {
+            vm._loginError = error;
+        };
 
         vm.register = function() {
+            vm.waiting=true;
             var user = auth.registerUser(vm.user).then(function (user) {
+                vm.waiting = false;
                 console.log(user);
                 $mdToast.show(
                     $mdToast.simple()
@@ -23,40 +29,47 @@
                         .hideDelay(3000)
                 );
             }).catch(function (error) {
-                vm.error = error;
+                vm.waiting = false;
+
+                vm.loginError(error.message);
             });
         };
 
         vm.login = function() {
+            vm.waiting=true;
+
             var user = auth.loginUser(vm.user).then(function(user){
+                vm.waiting = false;
+
                 $mdToast.show(
                     $mdToast.simple()
                         .textContent('Success! Now logged in ')
                         .hideDelay(3000)
                 );
             }) .catch(function (error) {
-                $mdToast.show(
-                    $mdToast.simple()
-                        .textContent('Error: ' + error.message)
-                        .hideDelay(3000)
-                );
+                vm.waiting = false;
+
+                vm.loginError(error.message);
             })
         };
 
         vm.registerWithGoogle = function() {
+            vm.waiting=true;
+
             auth.loginWithGoogle().then(function(result) {
+                vm.waiting = false;
+
                 $mdToast.show(
                     $mdToast.simple()
                         .textContent('Success! Now logged in')
                         .hideDelay(3000)
                 );
             }).catch(function(error) {
-                console.error("Authentication failed:", error);
+                vm.waiting = false;
+
+                vm.loginError(error.message);
             });
         }
-
-    }
-    function loginError(error) {
 
     }
 

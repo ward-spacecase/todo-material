@@ -53,7 +53,9 @@
                             </div>
                         </div>
                         <!--https://material.angularjs.org/latest/api/directive/mdInput-->
-
+                        <div ng-show="vm.waiting" layout="row" layout-align="center center">
+                            <md-progress-circular md-mode="indeterminate" class="md-accent"></md-progress-circular>
+                        </div>
                         <md-input-container layout-align="center center">
                             <div layout="row" layout-sm="column" layout-margin>
                                 <md-button class="md-raised md-accent" flex="50" flex-sm="100" ng-click="vm.login()">Login</md-button>
@@ -66,6 +68,11 @@
                                 <md-button id="google-button" ng-click="vm.registerWithGoogle()"><img src="img/btn_google_signin_light_normal_web.png"></md-button>
                             </div>
                         </md-input-container>
+                        <div id="loginErrors" layout="row" ng-show="vm._loginError"><p>
+                            {{vm._loginError}}
+                        </p>
+                        </div>
+
                     </md-content>
 
 
@@ -100,7 +107,9 @@
                                 </div>
                             </md-input-container>
                         </div>
-
+                        <div ng-show="vm.waiting" layout="row" layout-align="center center">
+                            <md-progress-circular md-mode="indeterminate" class="md-accent"></md-progress-circular>
+                        </div>
                         <md-input-container layout-align="center center">
                             <div layout="row" layout-sm="column" layout-margin>
                                 <md-button ng-click="vm.loginBool = !vm.loginBool" class="md-raised" flex="50" flex-sm="100"">Login</md-button>
@@ -113,7 +122,9 @@
                                 <md-button id="google-button" ng-click="vm.registerWithGoogle()"><img src="img/btn_google_signin_light_normal_web.png"></md-button>
                             </div>
                         </md-input-container>
-
+                        <div id="loginErrors" layout="row" ng-show="vm._loginError">
+                            <p> {{vm._loginError}}</p>
+                        </div>
                     </md-content>
 
                 </md-whiteframe>
