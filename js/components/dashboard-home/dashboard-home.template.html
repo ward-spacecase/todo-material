@@ -1,0 +1,50 @@
+<div layout="column" style="min-height:100vh" ng-cloak>
+
+    <section layout="row" flex>
+
+        <md-sidenav
+                class="md-sidenav-left"
+                md-component-id="left"
+                md-is-locked-open="$mdMedia('gt-md')"
+                md-whiteframe="4">
+
+            <md-toolbar md-theme="docs-dark">
+                <img src="img/icon.jpg" class="avatarBig">
+                <h1 id="brand-lettering"><span class="yuge">J</span>ust Do It</h1>
+
+            </md-toolbar>
+            <md-content layout-padding>
+                <md-button ng-click="close()" class="md-primary" hide-gt-md>
+                    Close Sidenav Left
+                </md-button>
+                <p hide show-gt-md>
+                    This sidenav is locked open on your device. To go back to the default behavior,
+                    narrow your display.
+                </p>
+            </md-content>
+
+        </md-sidenav>
+
+
+
+            <div flex layout="column" class="background-color" layout-align="top center">
+                <md-toolbar md-theme="docs-dark">
+
+                    <div class="md-toolbar-tools">
+                        <h1 style="padding-left: 20px;">Dashboard</h1>
+                        <!-- fill up the space between left and right area -->
+                        <span flex></span>
+
+
+                            <md-icon class="material-icons" style="font-size: 44px; width: 44px; height: 44px;">account_circle</md-icon>
+
+                    </div>
+
+                </md-toolbar>
+            </div>
+
+
+
+    </section>
+
+</div>

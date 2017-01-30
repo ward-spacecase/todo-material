@@ -15,7 +15,7 @@
               })
               .state('dashboard', {
                   url: '/dashboard',
-                  template: '<dashboard></dashboard>'
+                  template: '<dashboardhome></dashboardhome>'
               });
 
       });
