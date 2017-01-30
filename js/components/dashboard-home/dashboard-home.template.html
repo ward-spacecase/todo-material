@@ -35,8 +35,33 @@
                         <!-- fill up the space between left and right area -->
                         <span flex></span>
 
+                        <md-menu md-position-mode="target-right target">
+                            <md-icon aria-label="Open demo menu"
+                                     class="material-icons md-icon-button"
+                                     ng-click="$mdOpenMenu($event)"
+                                     style="font-size: 44px; width: 44px; height: 44px;">
 
-                            <md-icon class="material-icons" style="font-size: 44px; width: 44px; height: 44px;">account_circle</md-icon>
+                                account_circle
+                            </md-icon>
+
+                            <md-menu-content width="6">
+
+                                <md-menu-item>
+                                    <md-button>
+                                            Settings
+                                        <md-icon class="material-icons">settings</md-icon>
+                                    </md-button>
+                                </md-menu-item>
+
+                                <md-menu-item>
+                                    <md-button>
+                                            Logout
+                                        <md-icon class="material-icons">exit_to_app</md-icon>
+                                    </md-button>
+                                </md-menu-item>
+                            </md-menu-content>
+                        </md-menu>
+
 
                     </div>
 

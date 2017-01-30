@@ -6,7 +6,9 @@
             controllerAs: 'vm'
         });
 
-    function DashboardHomeController() {
+    function DashboardHomeController($user) {
         var vm = this;
+        vm.user = $user.getUser();
+
     }
 })();
