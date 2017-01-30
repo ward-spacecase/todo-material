@@ -8,7 +8,7 @@
            };
 
            self.loggedIn = function() {
-               var user = JSON.parse(localStorage.qu);
+               var user = localStorage.qu;
 
                if(user == null || user == undefined) {
                    return false;
