@@ -45,7 +45,11 @@
                             </md-icon>
 
                             <md-menu-content width="6">
-
+                                <md-menu-item>
+                                    <span style="float: left" ng-if="vm.user.displayName">{{vm.user.displayName}}</span>
+                                    <span style="float: left" ng-if="!vm.user.displayName">{{vm.user.email}}</span>
+                                    <span style="float: right;"><img ng-src="{{vm.user.photoURL}}" id="profileImg"></span>
+                                </md-menu-item>
                                 <md-menu-item>
                                     <md-button>
                                             Settings

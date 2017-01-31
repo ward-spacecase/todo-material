@@ -110,7 +110,7 @@
                         <div layout="row" layout-align="center center">
                             <md-input-container flex="70" flex-sm="100">
                                 <label>Confirm Password</label>
-                                <input name="confirmpassword" compare-to="registerForm.password" ng-model="vm.user.confirm" type="password" required>
+                                <input name="confirmpassword" compare-to="vm.user.password" ng-model="vm.user.confirm" type="password" required>
                                 <div ng-messages="registerForm.confirmpassword.$error">
                                     <div ng-message="required">This is required!</div>
                                     <div ng-message="compareTo">Must match first password!</div>

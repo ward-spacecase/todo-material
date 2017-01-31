@@ -75,3 +75,9 @@ h1 .yuge {
     color: rgba(255,0,0, .9);
 
 }
+
+#profileImg {
+    border-radius: 100%;
+    max-width: 48px;
+    max-height: 48px;
+}

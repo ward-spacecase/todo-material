@@ -20,6 +20,10 @@
                var user = JSON.parse(localStorage.qu);
 
                if(self.loggedIn()) {
+                   console.log(user);
+                   if(user.user){
+                       return user.user;
+                   }
                    return user;
                } else {
                    return false;
