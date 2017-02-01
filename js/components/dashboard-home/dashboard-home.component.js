@@ -6,8 +6,10 @@
             controllerAs: 'vm'
         });
 
-    function DashboardHomeController($user) {
+    function DashboardHomeController($user, firebaseStorage) {
         var vm = this;
+
+        vm.fs = firebaseStorage;
         vm.user = $user.getUser();
 
     }
