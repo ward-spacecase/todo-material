@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f7a829e4-d245-4bea-95a6-00348f51a5f0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/components/dashboard-home/dashboard-home.component.js" afterPath="$PROJECT_DIR$/js/components/dashboard-home/dashboard-home.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/components/dashboard-home/dashboard-home.template.html" afterPath="$PROJECT_DIR$/js/components/dashboard-home/dashboard-home.template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/services/accessUser.service.js" afterPath="$PROJECT_DIR$/js/services/accessUser.service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/services/database.service.js" afterPath="$PROJECT_DIR$/js/services/database.service.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -32,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="508">
-              <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+              <caret line="40" column="23" lean-forward="false" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -61,7 +59,7 @@
       <file leaf-file-name="default-home.template.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/components/default-home/default-home.template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1680">
+            <state relative-caret-position="193">
               <caret line="112" column="90" lean-forward="false" selection-start-line="112" selection-start-column="90" selection-end-line="112" selection-end-column="90" />
               <folding>
                 <element signature="n#style#0;n#md-content#0;n#div#1;n#!!top" expanded="true" />
@@ -73,8 +71,8 @@
       <file leaf-file-name="dashboard-home.template.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/components/dashboard-home/dashboard-home.template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#md-toolbar#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
@@ -90,8 +88,8 @@
       <file leaf-file-name="dashboard-home.component.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/components/dashboard-home/dashboard-home.component.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+            <state relative-caret-position="225">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -110,8 +108,8 @@
       <file leaf-file-name="database.service.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/services/database.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="30">
+              <caret line="2" column="83" lean-forward="false" selection-start-line="2" selection-start-column="83" selection-end-line="2" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -153,8 +151,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/components/default-home/default-home.component.js" />
         <option value="$PROJECT_DIR$/js/services/accessUser.service.js" />
-        <option value="$PROJECT_DIR$/js/services/database.service.js" />
         <option value="$PROJECT_DIR$/js/components/dashboard-home/dashboard-home.template.html" />
+        <option value="$PROJECT_DIR$/js/services/database.service.js" />
         <option value="$PROJECT_DIR$/js/components/dashboard-home/dashboard-home.component.js" />
       </list>
     </option>
@@ -257,8 +255,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -360,7 +358,8 @@
       <workItem from="1485734878322" duration="7465000" />
       <workItem from="1485789215451" duration="5786000" />
       <workItem from="1485877426882" duration="4084000" />
-      <workItem from="1485964439891" duration="3174000" />
+      <workItem from="1485964439891" duration="3223000" />
+      <workItem from="1486046576387" duration="4397000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1485191833220</created>
@@ -411,11 +410,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485883430273</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="array database">
+      <created>1485969094243</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1485969094243</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47270000" />
+    <option name="totallyTimeSpent" value="51716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="967" extended-state="6" />
@@ -464,11 +470,12 @@
     <MESSAGE value="future validate service, bugs found need fixing (ngMessage)" />
     <MESSAGE value="forward to dash when logged in, need to fix register pswd" />
     <MESSAGE value="started database service" />
-    <option name="LAST_COMMIT_MESSAGE" value="started database service" />
+    <MESSAGE value="array database" />
+    <option name="LAST_COMMIT_MESSAGE" value="array database" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -787,16 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/components/default-home/default-home.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="112" column="90" lean-forward="false" selection-start-line="112" selection-start-column="90" selection-end-line="112" selection-end-column="90" />
-          <folding>
-            <element signature="n#style#0;n#md-content#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/app.module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -829,14 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/services/accessUser.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -845,18 +834,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/services/database.service.js">
+    <entry file="file://$PROJECT_DIR$/js/components/default-home/default-home.template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="193">
+          <caret line="112" column="90" lean-forward="false" selection-start-line="112" selection-start-column="90" selection-end-line="112" selection-end-column="90" />
+          <folding>
+            <element signature="n#style#0;n#md-content#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/components/dashboard-home/dashboard-home.template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#md-toolbar#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
@@ -868,10 +859,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="40" column="23" lean-forward="false" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/services/database.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="83" lean-forward="false" selection-start-line="2" selection-start-column="83" selection-end-line="2" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/components/dashboard-home/dashboard-home.component.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>

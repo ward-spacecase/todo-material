@@ -6,11 +6,17 @@
             controllerAs: 'vm'
         });
 
-    function DashboardHomeController($user, firebaseStorage) {
+    function DashboardHomeController($user, FirebaseStorage, $scope) {
         var vm = this;
 
-        vm.fs = firebaseStorage;
         vm.user = $user.getUser();
+
+       var test = FirebaseStorage().$bindTo($scope, "userFire").then(function(){
+           $scope.userFire.lists = [{listTitle: "list1"}, {listTitle: "list2"}];
+
+       });
+
+
 
     }
 })();

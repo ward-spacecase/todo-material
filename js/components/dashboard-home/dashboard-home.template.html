@@ -14,11 +14,12 @@
 
             </md-toolbar>
             <md-content layout-padding>
-                <md-button ng-click="close()" class="md-primary" hide-gt-md>
-                    Close Sidenav Left
-                </md-button>
-                <p hide show-gt-md>
-
+                <p>
+                    <ul ng-repeat="list in userFire.lists">
+                <li>
+                    {{list}}
+                </li>
+            </ul>
                 </p>
             </md-content>
 
