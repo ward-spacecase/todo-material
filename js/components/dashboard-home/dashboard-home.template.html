@@ -13,22 +13,25 @@
                 <h1 id="brand-lettering"><span class="yuge">J</span>ust Do It</h1>
 
             </md-toolbar>
-            <md-content layout-padding>
-                <p>
-                    <ul ng-repeat="list in userFire.lists">
-                <li>
-                    {{list}}
-                </li>
-            </ul>
-                </p>
+            <md-content class="scrollable-nav-content">
+                    <h1 style="text-align: left">Lists: </h1>
+                    <md-list>
+                <md-list-item layout-align="center end" ng-repeat="list in userFire.lists">
+                    <md-button>
+                    {{list.listTitle}}
+                        <md-icon  class="material-icons">list</md-icon>
+                    </md-button>
+                </md-list-item>
+            </md-list>
+
             </md-content>
 
         </md-sidenav>
 
 
 
-            <div flex layout="column" class="background-color" layout-align="top center">
-                <md-toolbar md-theme="docs-dark">
+            <div flex layout="column" class="background-color" layout-align="top">
+                <md-toolbar md-theme="docs-dark" layout="row">
 
                     <div class="md-toolbar-tools">
                         <h1 style="padding-left: 20px;">Dashboard</h1>
@@ -70,6 +73,16 @@
                     </div>
 
                 </md-toolbar>
+                <md-content layout="row" class="background-color">
+                   <md-card class="cards">
+                       <h1>Done</h1>
+                       <h2>You've completed 40 todos!</h2>
+                   </md-card>
+                    <md-card class="cards">
+                       <h1>ToDo</h1>
+                       <h2>You have 28 todos left!</h2>
+                   </md-card>
+                </md-content>
             </div>
 
 

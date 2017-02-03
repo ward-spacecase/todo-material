@@ -81,3 +81,23 @@ h1 .yuge {
     max-width: 48px;
     max-height: 48px;
 }
+md-list .md-button {
+    color: inherit;
+    font-weight: 500;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    height: 48px;
+}
+md-list .md-button.selected {
+    color: #03a9f4;
+}
+
+md-sidenav  md-list {
+    padding: 0px 0px 8px 0px;
+}
+.cards {
+    color: white;
+    width: 50%;
+    background-color:#2089c9;
+}

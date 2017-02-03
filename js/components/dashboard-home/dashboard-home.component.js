@@ -12,7 +12,6 @@
         vm.user = $user.getUser();
 
        var test = FirebaseStorage().$bindTo($scope, "userFire").then(function(){
-           $scope.userFire.lists = [{listTitle: "list1"}, {listTitle: "list2"}];
 
        });
 
