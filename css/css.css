@@ -90,7 +90,7 @@ md-list .md-button {
     height: 48px;
 }
 md-list .md-button.selected {
-    color: #03a9f4;
+    background-color: #03a9f4;
 }
 
 md-sidenav  md-list {
@@ -100,4 +100,28 @@ md-sidenav  md-list {
     color: white;
     width: 50%;
     background-color:#2089c9;
+}
+.cards-large {
+    color: white;
+    width: 100%;
+    background-color:#2089c9;
+}
+.cards-large .md-button {
+    text-align:center;
+}
+.cards-large .md-button.md-fab.md-mini {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#add-list-button {
+     background-color: #e5f2f9;
+}
+#add-list-button:hover {
+
+    background-color: #c5e4f7;
+}
+
+button.md-button.md-ink-ripple.strikethrough {
+  text-decoration: line-through;
+    color: rgba(0,0,0, 0.5);
 }

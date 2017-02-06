@@ -13,6 +13,10 @@
 
             self.loginUser = function (user){
                 return $firebaseAuth().$signInWithEmailAndPassword(user.email, user.password);
+            };
+
+            self.logout = function() {
+                return $firebaseAuth().$signOut();
             }
         })
 

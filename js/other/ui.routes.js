@@ -18,6 +18,14 @@
                   template: '<dashboardhome></dashboardhome>'
               });
 
+      })
+      .filter('zeroToNo', function(){
+          return function(value) {
+              if(value == 0) {
+                  return 'no';
+              }
+              return value;
+          }
       });
 
 })();
